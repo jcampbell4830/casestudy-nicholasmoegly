@@ -94,18 +94,52 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+html {
+    background: black;
+    box-sizing: border-box;
+}
+.banner {
+    display: block;
+    width: 85%;
+    margin-top: 55px;
+    margin-right: auto;
+    margin-left: auto;
 
+}
+.top-nav {
+    background-color: hsla(0,100%,100%,0.9);
+    width: 85%;
+    margin: 0px auto;
+    position: fixed;
+    top: 0px;
+    display: block;
+}
+.top-nav ul {
+    list-style: none;
+    text-align: center;
+    display: block;
+}
+.top-nav li {
+    display: inline-block;
+    margin: 0px 40px;
 
-
-
-
-
-
-
-
-
-
-
+}
+.top-nav a {
+    color: black;
+}
+.top-nav a:hover {
+    color: #a18a47;
+}
+.intro {
+    width: 85%;
+    margin: 0px auto;
+    background-color: #a18a47;
+    text-align: center;
+    color: white;
+}
 
 
 
