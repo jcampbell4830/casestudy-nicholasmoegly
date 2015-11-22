@@ -112,9 +112,11 @@ html {
 .top-nav {
     background-color: hsla(0,100%,100%,0.9);
     width: 85%;
-    margin: 0px auto;
+    margin: 0 auto;
     position: fixed;
     top: 0px;
+    left:0px;
+    right: 0px;
     display: block;
 }
 .top-nav ul {
@@ -140,8 +142,18 @@ html {
     text-align: center;
     color: white;
 }
-
-
+.projects {
+    margin: 0px auto;
+    width: 85%;
+}
+.mailing {
+    margin: 0px auto;
+    width: 85%;
+}
+.page-footer {
+    margin: 0px auto;
+    width: 85%;
+}
 
 
 
