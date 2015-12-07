@@ -119,7 +119,7 @@ html {
     left:0px;
     right: 0px;
     display: block;
-
+    z-index: 2;
 }
 .top-nav ul {
     list-style: none;
@@ -146,6 +146,19 @@ html {
 .top-nav img {
     max-width: 50%;
 }
+.fa {
+    position: relative;
+    float: right;
+    top: -75px;
+    margin: 5px;
+    color: #a18a47;
+}
+.fa:hover {
+    color: #C9B491;
+}
+.icons {
+    margin-right: 40px;
+}
 .intro {
     width: 85%;
     margin: 0px auto;
@@ -158,14 +171,14 @@ html {
     padding: 50px 200px 40px 200px;
     background-size: cover;
 }
-.intro h1 {
+.mailing h1, .intro h1 {
     font-family: 'Lato', sans-serif;
     text-transform: uppercase;
     font-size: 1.2em;
     letter-spacing: 0.2em;
 }
-.intro p {
-    font-family: Times, serif;
+.mailing p, .intro p {
+    font-family: Average, serif;
     line-height: 2em;
     font-size: 1.2em;
 }
@@ -174,6 +187,11 @@ html {
     width: 40%;
     margin: 40px auto;
 }
+.whiteline2 {
+   border-bottom: 3px solid white;
+    width: 20%;
+    margin: 10px auto; 
+}
 .projects {
     background: white;
     margin: 0px auto;
@@ -181,25 +199,34 @@ html {
     margin-top: -20px;
     padding: 50px;
     clear: both;
-    height: 800px;
+    height: 720px;
 }
 .projects h2 {
     font-family: 'Lato', sans-serif;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     font-size: 1.2em;
-    border-top: 2px solid #ccc;
-    border-bottom: 2px solid #ccc;
+    border-top: 3px solid #ccc;
+    border-bottom: 3px solid #ccc;
     padding: 10px 0;
 }
 .projects h2 p {
     font-family: serif;
     text-transform: none;
     display: inline;
-    text-align: right;
+    float: right;
     font-size: 0.7em;
     letter-spacing: 0.1em;
-    
+    margin-top: 0px;
+    font-weight: lighter;
+    font-family: Average;
+}
+.see {
+    color: #a18a47;
+    text-decoration: none;
+}
+.see:hover {
+    color: #C9B491;
 }
 .recent {
     width: 48%;
@@ -208,23 +235,91 @@ html {
 .recent img {
     max-width: 100%;
 }
+.recent p {
+    font-family: Average;
+    font-size: 0.9em;
+    line-height: 2em;
+}
 .featured {
     width: 48%;
     float: right;
     
 }
-.featured img {
-    max-width: 45%;
+.product {
+    position: relative;
     float: left;
-    margin: 0 7px;
+    width: 50%;
+    padding: 2px;
+}
+.product img {
+    position: relative;
+    max-width: 98%;
+    z-index: 0;
+}
+.product p {
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.8em;
+    letter-spacing: 0.1em;
 }
 .mailing {
-    margin: 0px auto;
+    background: url("http://www.nicholasmoegly.com/wp-content/uploads/2015/09/Mailing-List-BG.jpg");
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -22px;
     width: 85%;
+    color: white;
+    text-align: center;
+    padding: 60px 0px;
+}
+.mailing a {
+    text-decoration: none;
+}
+.mailing form {
+    color: black;
+}
+#button {
+    font-family: "Lato", sans-serif;
+    text-transform: uppercase;
+    border: 3px solid white;
+    display: inline-block;
+    padding: 13px 25px;
+    margin-left: 15px;
+    color: white;
+}
+#button:hover {
+    background: white;
+    color: #a18a47;
+}
+.mailing input {
+    padding: 15px 100px 15px 15px;
+    font-family: "Lato", sans-serif;
+    text-transform: uppercase;
+    width: 400px;
 }
 .page-footer {
-    margin: 0px auto;
+    background: #ccc;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -20px;
     width: 85%;
+    text-align: center;
+    padding: 20px 0px;
+}
+.page-footer p {
+    font-family: Average, serif;
+    font-size: 0.9em;
+}
+.page-footer h2 {
+    font-family: 'Lato', sans-serif;
+    color: #a18a47;
+    font-size: 0.7em;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    line-height: 0em;
 }
 
 
